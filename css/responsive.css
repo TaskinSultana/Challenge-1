@@ -1,0 +1,168 @@
+@media only screen and (max-width:1100px) {
+    #service{
+        margin:30px 0px;
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+    }
+    .service .item{
+        width: 100%;
+    }
+    .menu-grid{
+        /* min-height: 600px; */
+        display: grid;
+        grid-template-rows: 1fr 0.7fr 0.5fr 1fr;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas: 
+        'starter starter salad salad'
+        'pic pic pic pic'
+        'maincourse maincourse maincourse maincourse'
+        'dessert dessert drink drink'
+        ;
+        grid-gap: 10px;
+    }
+    .review{
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .review .center{
+        width: 100%;
+        min-height: 450px;
+        /* border: 2px solid maroon; */
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 1px 1px 1px 1px rgb(232, 169, 169);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:835px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: aliceblue;
+        border-radius: 16px;
+    }
+
+    #home {
+        height: 470px;
+        padding: 3px 28px;
+    }
+
+    #home::before {
+        height: 580px;
+    }
+
+    .h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    #home {
+        height: 370px;
+        padding: 3px 28px;
+    }
+
+    #home::before {
+        height: 480px;
+    }
+
+    .h1 {
+        color: rgb(255, 255, 255);
+        font-size: 1.3rem;
+
+    }
+    .h2{
+
+        font-size: 1.5rem;
+    
+    }
+
+    #home p {
+        font-size: 13px;
+    }
+    .menu-grid{
+        /* min-height: 600px; */
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:0.25fr 0.25fr 0.25fr 0.25fr;
+        grid-template-areas: 
+        'starter starter starter starter'
+        'salad salad salad salad'
+        'pic pic pic pic'
+        'maincourse maincourse maincourse maincourse'
+        'dessert dessert dessert dessert'
+        'drink drink  drink drink'
+        ;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width:552px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 6px 8px;
+        font-size: 0.8rem;
+        color: aliceblue;
+        border-radius: 10px;
+    }
+    #service{
+        margin: 30px 0px;
+    }
+    .service .item{
+        margin: 8px 0px;
+        /* padding: 8px 10px; */
+    }
+    .item p{
+        text-align: justify;
+        padding: 10px 10px;
+        font-size: 0.8rem;
+     }
+     .menu-grid .menu-pic{
+        border-radius: 20px;
+        background: url('../img/grid-2.webp') no-repeat center center/cover;
+        box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+        grid-area: pic;
+    }
+    .menu-grid ul li{
+        font-size: 0.9rem;
+       
+    }
+    .center p{
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 0.8rem;
+     }
+     #contact p,address{
+        font-size: 0.8rem;
+    }
+}
+    

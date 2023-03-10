@@ -1,0 +1,337 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;    
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+   
+}
+.logo {
+    margin: 4px 30px;
+}
+.logo img {
+    width: 80px;
+    margin: 3px 6px;
+    clip-path: circle()
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    /* margin:20px 6px; */
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 22px;
+    /* margin: 0px 10px; */
+    font-size: 1.1rem;
+    color: aliceblue;
+    /* border: 1px solid red; */
+    border-radius: 16px;
+}
+
+/* Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background: url('../img/home.jpeg')
+     no-repeat center center / cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+.h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px 0px;
+    /* text-transform: uppercase; */
+
+}
+.h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px 0px;
+    text-transform: uppercase;
+
+}
+#home p{
+    text-align: center;
+    padding: 4px 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(12, 12, 12);
+}
+#home .btn{
+    margin: 20px 10px;
+    padding: 8px 20px;
+    border: 1px solid rgb(213, 74, 74);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0,0,0.2);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Services */
+
+
+#service{
+    margin:60px 40px;
+}
+#service h1{
+    color:rgb(213, 74, 74);
+}
+.service{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .item{
+    width: 33%;
+    border: 2px solid maroon;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.item .img1{
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: url('../img/card-1.webp') no-repeat center center / cover;
+}
+.item .img2{
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: url('../img/card-2.webp')no-repeat center center / cover;
+}
+.item .img3{
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: url('../img/card-3.webp')no-repeat center center / cover;
+}
+.item h3{
+    font-size: 1.4rem;
+    padding: 8px 10px;
+    color: rgb(213, 74, 74);
+}
+.item p{
+   text-align: justify;
+   padding: 10px 15px;
+   font-size: 1.1rem;
+}
+
+
+/* Menu */
+
+
+#menu{
+    margin:60px 40px;
+}
+#menu h1{
+    color: rgb(213, 74, 74);
+    margin: 40px 0px;
+}
+.menu-grid{
+    min-height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+    'starter pic pic pic'
+    'salad maincourse dessert drink'
+    ;
+    grid-gap: 15px;
+}
+.menu-grid .menu-starter{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: starter;
+}
+.menu-grid h3{
+    text-align: center;
+    padding: 20px 0px;
+}
+.menu-grid ul{
+    padding: 10px 0px;
+    padding-left: 40px;
+}
+.menu-grid ul li{
+    font-size: 1.1rem;
+   
+}
+.menu-grid ul span{
+    font-size: 14px;
+    color: rgb(213, 74, 74);
+}
+.menu-grid ul span ul li{
+    list-style-type: disc;
+    font-size: 14px;
+    color: rgb(213, 74, 74);
+}
+.menu-grid .menu-salad{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: salad;
+}
+.menu-grid .menu-maincourse{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: maincourse;
+}
+.menu-grid .menu-dessert{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: dessert;
+}
+.menu-grid .menu-pic{
+    border-radius: 20px;
+    background: url('../img/grid.jpeg') no-repeat center center/cover;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: pic;
+}
+.menu-grid .menu-drink{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(197, 195, 195);
+    grid-area: drink;
+}
+
+
+
+/* review */
+
+#review{
+    margin:60px 40px;
+}
+#review h1{
+    color: rgb(213, 74, 74);
+    margin: 40px 0px;
+}
+.review{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review .center{
+    width: 33%;
+    min-height: 450px;
+    /* border: 2px solid maroon; */
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(232, 169, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center .img{
+    margin:10px auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.center .img img{
+    height: 130px;
+    clip-path: circle();    
+}
+.center p{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+ }
+.center .review_name{
+    text-align: center;
+    color: rgb(236, 165, 165);
+    font-size: 18px;
+    padding: 20px 0px;
+}
+.center .rating i{
+    font-weight: 900;
+    color: rgb(232, 169, 169);
+    margin-bottom:20px ;
+}
+
+
+/* contact */
+
+#contact{
+    color: black;
+    margin: 50px 0px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#contact h1{
+    color: rgb(213, 74, 74);
+    margin: 10px 0px;
+}
+#contact .contact-logo{
+    display: block;
+    margin:10px auto;
+}
+#contact .contact-logo i{
+    padding: 30px;
+    border: 1px solid rgb(213, 74, 74);
+    background-color: rgb(213, 74, 74);
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+}
+#contact p,address{
+    font-size: 1.1rem;
+}
+#contact .contact-social i{
+    color: rgb(213, 74, 74);
+    font-size: 1.5rem;
+    padding: 20px 10px;
+    cursor: pointer;
+}
